@@ -24,8 +24,4 @@ public class Profesor {
         return isLogged;
     }
 
-    public void addRegister(RegistraApp registraApp, String description){
-        if (isLogged)
-            registraApp.processDescription(description);
-    }
 }
