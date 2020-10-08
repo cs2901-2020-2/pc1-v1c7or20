@@ -14,7 +14,12 @@ public class Oficinas {
 
     public void update (String values) {
         String description = values;
-        logger.info(name + " recibio: " + description);
+        StringBuilder str = new StringBuilder();
+        str.append(name);
+        str.append(" recibio: ");
+        str.append(description);
+        String answer = str.toString();
+        logger.info(answer);
     }
 
 }
